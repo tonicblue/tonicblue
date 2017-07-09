@@ -1,0 +1,20 @@
+# Site settings
+title: tonicblue
+description: A place on the web for me to neglect.
+url: https://tonicblue.co.uk
+enforce_ssl: tonicblue.co.uk
+permalink: /blog/:title
+
+# Account settings
+twitter: tonicblue
+facebook: tonicblue
+
+# Build settings
+markdown: kramdown
+
+sass:
+    sass_dir: ./_scss
+    style: compressed
+
+gems:
+  - jekyll-redirect-from
