@@ -1,8 +1,6 @@
 root:
         - title: Home
           path: /
-        - title: Me
-          path: /me
         - title: Blog
           path: /blog
         - title: Projects

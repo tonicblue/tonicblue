@@ -10,7 +10,10 @@
       {% include header.html %}
       
       <main class="mdl-layout__content">
-        <div class="page-content">
+        <div class="top-image mdl-shadow--2dp">
+            <span class="heading">{{ page.title }}</span>
+        </div>
+        <div class="page-content container-fluid">
             {{ content }}
         </div>
       </main>      
