@@ -6,12 +6,16 @@
 <html>
   {% include head.html %}
   <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       {% include header.html %}
       
-      <div id="site-content">
-        {{ content }}
-      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            {{ content }}
+        </div>
+      </main>      
 
       {% include footer.html %}
+    </div>
   </body>
 </html>
