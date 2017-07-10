@@ -13,12 +13,13 @@
         <div class="top-image mdl-shadow--2dp">
             <span class="heading">{{ page.title }}</span>
         </div>
-        <div class="page-content container-fluid">
-            {{ content }}
+        <div class="page-content">
+            <div class="container-fluid">
+                {{ content }}
+            </div>
         </div>
-      </main>      
-
-      {% include footer.html %}
+        {% include footer.html %}
+      </main>     
     </div>
   </body>
 </html>
