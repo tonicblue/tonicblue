@@ -38,6 +38,9 @@ permalink: /newtab/
                     console.log(val);
                     if(val.indexOf('.') > -1 && val.indexOf(' ') === -1){
                         console.log('We have a url');
+                        if(val.indexOf('http') !== 0){
+                            val = 'https://' + val;
+                        }
                         window.location.href = val;
                     }else{
                         console.log('Looks like we have a search');
