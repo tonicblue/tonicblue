@@ -33,9 +33,16 @@ permalink: /newtab/
         <script>
             var input = document.querySelector('input');
             input.addEventListener('keypress', function(e){
-                console.log(e);
                 if(e.keyCode === 13){
-                    alert('Enter pressed');
+                    var val = input.value;
+                    console.log(val);
+                    if(val.match(/^(https?:\/\/)?([0-9a-zA-Z][-\w]*[0-9a-zA-Z\.)+[a-zA-Z]{2,6})\//ig)){
+                        console.log('We have a url');
+                        window.location.href = val;
+                    }else{
+                        console.log('Looks like we have a search');
+                        window.location.href = 'https://google.com/?q=' + encodeURIComponent(val);
+                    }
                 }
             });
             document.addEventListener('DOMContentLoaded', function(){
