@@ -7,14 +7,28 @@ permalink: /newtab/
     <head>
         <title>New Tab</title>
         <style>
+            html, body {
+                height: 100%;
+            }
             body{
                 background-image:url(https://source.unsplash.com/collection/168902/1920x1080);
                 background-size:cover;
                 background-color:#272822;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            input{
+                border: 5px solid rgba(39, 40, 34, 0.8);
+                background-color: rgba(39, 40, 34, 0.7);
+                padding: 10px;
+                width: 66.666%;
+                color: #F92672;
+                font-size: 30px;
             }
         </style>
     </head>
     <body>
-        <!-- 'sup -->
+        <input type="text" id="search">
     </body>
 </html>
