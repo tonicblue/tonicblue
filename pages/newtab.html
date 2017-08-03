@@ -26,12 +26,20 @@ permalink: /newtab/
                 color: #F92672;
                 font-size: 30px;
             }
+            span{
+                color: #ffffff;
+                filter: invert(100%);
+                font-size: 0.5vw;
+                font-family: monospace;
+            }
         </style>
     </head>
     <body>
+        <span>Loading...</span>
         <input type="text" autofocus>
         <script>
             var input = document.querySelector('input');
+            var span = document.querySelector('span');
             input.addEventListener('keypress', function(e){
                 if(e.keyCode === 13){
                     var val = input.value;
@@ -51,6 +59,22 @@ permalink: /newtab/
             document.addEventListener('DOMContentLoaded', function(){
                 document.body.style.backgroundImage = 'url(https://source.unsplash.com/collection/168902/1920x1080)';
             });
+            window.setInterval(function(){
+                var d = new Date();
+                var h = d.getHours();
+                var m = d.getMinutes();
+
+                if(h < 10){
+                    h = '0' + h;
+                }
+
+                if(m < 10){
+                    m = '0' + m;
+                }
+
+                var time = h + ':' + m;
+                span.innerText = time;
+            }, 500);
         </script>
     </body>
 </html>
