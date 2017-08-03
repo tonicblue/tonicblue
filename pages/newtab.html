@@ -57,8 +57,8 @@ permalink: /newtab/
             var color = colours[rnd];
             input.style.color = color;
             div.style.color = color;
-
-            input.addEventListener('keypress', function(e){
+            /*
+            window.inputHandler = function(e){
                 if(e.keyCode === 13){
                     var val = input.value;
                     console.log(val);
@@ -73,7 +73,10 @@ permalink: /newtab/
                         window.location.href = 'https://google.com/search?q=' + encodeURIComponent(val);
                     }
                 }
-            });
+            }
+
+            window.inputListener = input.addEventListener('keypress', window.inputHandler);
+            */
             document.addEventListener('DOMContentLoaded', function(){
                 document.body.style.backgroundImage = 'url(https://source.unsplash.com/collection/168902/1920x1080)';
             });
