@@ -32,7 +32,8 @@ permalink: /newtab/
         <input type="text" id="search">
         <script>
             var input = document.querySelector('#search');
-            input.attachEventListener('keypress', function(e){
+            input.addEventListener('keypress', function(e){
+                console.log(e);
                 if(e.keyCode === 13){
                     alert('Enter pressed');
                 }
