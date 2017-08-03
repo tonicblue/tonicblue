@@ -19,7 +19,7 @@ permalink: /newtab/
                 justify-content: center;
             }
             input{
-                border: 5px solid rgba(249, 38, 114, 0.7);
+                border: 5px solid rgba(102, 217, 239, 0.7);
                 background-color: rgba(39, 40, 34, 0.7);
                 padding: 10px;
                 width: 66.666%;
@@ -29,9 +29,9 @@ permalink: /newtab/
         </style>
     </head>
     <body>
-        <input type="text" id="search">
+        <input type="text" autofocus>
         <script>
-            var input = document.querySelector('#search');
+            var input = document.querySelector('input');
             input.addEventListener('keypress', function(e){
                 console.log(e);
                 if(e.keyCode === 13){
@@ -39,7 +39,6 @@ permalink: /newtab/
                 }
             });
             document.addEventListener('DOMContentLoaded', function(){
-                input.autofocus = true;
                 document.body.style.backgroundImage = 'url(https://source.unsplash.com/collection/168902/1920x1080)';
             });
         </script>
