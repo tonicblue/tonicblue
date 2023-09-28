@@ -1,9 +1,0 @@
-root:
-        - title: Home
-          path: /
-        - title: Blog
-          path: /blog
-        - title: Projects
-          path: /projects
-        - title: Curriculum Vitae
-          path: /curriculum-vitae

@@ -1,7 +1,7 @@
 {% if site.data.menu[include.menuPath] %}
     <nav {% if include.class %}class="{{ include.class }}"{% endif %}>
         {% for item in site.data.menu[include.menuPath] %}
-            <a class="{% if include.itemClass %} {{ include.itemClass }} {% else %} mdl-navigation__link {% endif %}" href="{{ item.path }}">{{ item.title }}</a>
+            <a href="{{ item.path }}">{{ item.title }}</a>
         {% endfor %}
     </nav>
 {% endif %}
