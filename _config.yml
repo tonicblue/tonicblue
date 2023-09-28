@@ -1,8 +1,8 @@
 # Site settings
 title: tonicblue
 description: A place on the web for me to neglect.
-url: https://tonicblue.co.uk
-enforce_ssl: tonicblue.co.uk
+url: https://tonic.blue
+enforce_ssl: tonic.blue
 permalink: /blog/:title
 
 # Account settings
